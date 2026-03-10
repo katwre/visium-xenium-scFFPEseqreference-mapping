@@ -20,7 +20,8 @@ If you're just starting your journey in spatial transcriptomics, I hope you find
 
 I explore a single FFPE tissue of breast cancer block (Stage II-B, ER + /PR − /HER2 +) analyzed
 with a trio of complementary technologies scFFPE-seq, Visium and Xenium by <a href="https://doi.org/10.1038/s41467-023-43458-x">Janesick et al Nat. Commun. 2023</a>. As far as I know, its the first round of such analysis being done at that time.
-Datasets were obtained from the GEO repository under id [GSE243280](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243280). 
+Datasets were obtained from the GEO repository under id [GSE243280](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243280) and 
+[Xenium FFPE Human Breast with Custom Add-on Panel](https://www.10xgenomics.com/datasets/xenium-ffpe-human-breast-with-custom-add-on-panel-1-standard)
 
 Overview of the platforms:
 - **scFFPE-seq**  technology designed to perform high-throughput single-nucleus RNA sequencing on archival, formalin-fixed paraffin-embedded (FFPE) tissue samples from 10x Genomics. It is well suited for building a reference atlas from archived FFPE samples.
