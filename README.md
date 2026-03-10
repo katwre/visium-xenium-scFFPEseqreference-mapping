@@ -12,11 +12,9 @@
 </figure>
 </br></br>
 
-My goal: *Which cell states inferred in 10x Visium co-occur in the same regions, and are those co-occurrences supported by real cell-cell neighborhoods in 10x Xenium?*
+My goal: *Which cell states inferred in 10x Visium co-occur in the same regions, and are those co-occurrences supported by real cell-cell neighborhoods in 10x Xenium?
 
-This is a toy project designed to help me work with Visium, Xenium, and scFFPE-seq datasets together and explore ways to integrate them.
-You can find my code in the `notebooks` folder.
-If you're just starting your journey in spatial transcriptomics, I hope you find it useful.
+This is a toy project designed to help me work with mostly with Xenium, but alsso Visium and scFFPE-seq datasets together and explore ways to integrate them. You can find my code in the `notebooks` folder.
 
 I explore a single FFPE tissue of breast cancer block (Stage II-B, ER + /PR − /HER2 +) analyzed
 with a trio of complementary technologies scFFPE-seq, Visium and Xenium by <a href="https://doi.org/10.1038/s41467-023-43458-x">Janesick et al Nat. Commun. 2023</a>. As far as I know, its the first round of such analysis being done at that time.
@@ -47,6 +45,7 @@ In practice:
 1. Build a high-quality annotated scFFPE-seq reference.
 2. Deconvolve Visium spots using the reference (for example, with cell2location).
 3. Test whether co-occurring Visium cell states are supported by true Xenium neighborhoods.
+
 
 
 Some useful links:
@@ -91,15 +90,24 @@ visium-xenium-reference-mapping/
 └── src/
 ```
 
-## Project idea
+## Project steps
 
 My steps:
 
-1. Get the reference into a solid annotated AnnData.
-2. Run Visium + cell2location.
-3. Load Xenium and transfer the same labels and markers.
-4. Do neighborhood validation on Xenium:
-- tumor-immune
-- tumor-fibroblast
-- duct / myoepithelial boundary
-- invasive front if visible
+- Get the reference into a solid annotated AnnData.
+- Run Visium + cell2location.
+- Load Xenium and transfer the same labels and markers.
+- Run cross-platform validation in Notebook 06:
+  - matched cell types between Visium and Xenium
+  - abundance/fraction concordance plots
+  - pairwise Visium A-B co-occurrence vs Xenium A-B neighborhood z comparison
+
+
+Results are reasonable, but the cross-platform concordance is not phenomenal:
+<figure>
+<p align="center">
+  <img src="img/VisiumcooccurrencevsXeniumneighbourhood.png" width="800" />
+</p>
+  <figcaption align="center"><b>Figure.</b> Pairwise comparison of Visium A-B co-occurrence and Xenium A-B neighborhood enrichment (z-score).</figcaption>
+</figure>
+</br></br>
