@@ -103,10 +103,10 @@ My steps:
   - pairwise Visium A-B co-occurrence vs Xenium A-B neighborhood z comparison
 
 
-Results are reasonable, but the cross-platform concordance is not phenomenal:
+Results are reasonable, but the cross-platform concordance is not phenomenal. This is a first-pass integration and validation analysis on this dataset by me. Additional QC (at the cell/spot level), more careful label transfer/lifting across platforms, and tighter harmonization of cell-state definitions could improve agreement in future iterations.
 <figure>
 <p align="center">
-  <img src="img/VisiumcooccurrencevsXeniumneighbourhood.png" width="800" />
+  <img src="img/VisiumcooccurrencevsXeniumneighbourhood.png" width="400" />
 </p>
   <figcaption align="center"><b>Figure.</b> Pairwise comparison of Visium A-B co-occurrence and Xenium A-B neighborhood enrichment (z-score).</figcaption>
 </figure>
