@@ -103,7 +103,7 @@ My steps:
   - pairwise Visium A-B co-occurrence vs Xenium A-B neighborhood z comparison
 
 
-Results are reasonable, but the cross-platform concordance is not phenomenal. This is a first-pass integration and validation analysis on this dataset by me. Additional QC (at the cell/spot level), more careful label transfer/lifting across platforms, and tighter harmonization of cell-state definitions could improve agreement in future iterations.
+Results are reasonable, but the cross-platform concordance is quite moderate. This is a first-pass integration and validation analysis on this dataset by me. Additional QC (at the cell/spot level), more careful label transfer/lifting across platforms, and tighter harmonization of cell-state definitions could improve agreement in future iterations.
 <figure>
 <p align="center">
   <img src="img/VisiumcooccurrencevsXeniumneighbourhood.png" width="400" />
