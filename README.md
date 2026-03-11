@@ -12,7 +12,7 @@
 </figure>
 </br></br>
 
-My goal: *Which cell states inferred in 10x Visium co-occur in the same regions, and are those co-occurrences supported by real cell-cell neighborhoods in 10x Xenium?
+My goal: *Which cell states inferred in 10x Visium co-occur in the same regions, and are those co-occurrences supported by real cell-cell neighborhoods in 10x Xenium?*
 
 This is a toy project designed to help me work with mostly with Xenium, but alsso Visium and scFFPE-seq datasets together and explore ways to integrate them. You can find my code in the `notebooks` folder.
 
